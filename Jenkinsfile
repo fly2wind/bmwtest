@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker { 
-          image 'maven:3.5-jdk-7'
+          image 'maven:3.5-jdk-9'
           args '-v $HOME/.m2:/root/.m2'
         }
     }
@@ -19,8 +19,8 @@ pipeline {
         stage('TEST') { 
             steps {
                 sh 'mvn test'
-                junit 'reports/**/*.xml' 
+                junit 'target/surefire-reports/*.xml' 
             }
-        }
+        }  
     }
 }
