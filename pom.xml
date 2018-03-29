@@ -47,10 +47,6 @@
 		</developer>
 	</developers>
 
-	<scm>
-		<url>https://github.com/kazuki43zoo/mybatis-spring-boot-jpetstore.git</url>
-	</scm>
-
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
