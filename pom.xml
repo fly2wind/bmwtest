@@ -267,9 +267,9 @@
 
 	<repositories>
 		<repository>
-			<id>sonatype-oss-releases</id>
-			<name>Sonatype OSS Snapshots Repository</name>
-			<url>https://oss.sonatype.org/content/repositories/releases</url>
+			<id>jcenter</id>
+			<name>JCenter Repository</name>
+			<url>https://jcenter.bintray.com</url>
 		</repository>
 		<repository>
 			<id>spring-releases</id>
