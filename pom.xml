@@ -216,41 +216,11 @@
 		</plugins>
 	</build>
 
-	<profiles>
-		<profile>
-			<id>jdk9</id>
-			<activation>
-				<jdk>9</jdk>
-			</activation>
-			<properties>
-				<!-- coverall 4.3.0 or previous version does not work on Java 9, see https://github.com/trautonen/coveralls-maven-plugin/issues/112 -->
-				<coveralls.skip>true</coveralls.skip>
-				<sonar.skip>true</sonar.skip>
-			</properties>
-		</profile>
-	</profiles>
-
 	<repositories>
 		<repository>
 			<id>jcenter</id>
 			<name>JCenter Repository</name>
 			<url>https://jcenter.bintray.com</url>
-		</repository>
-		<repository>
-			<id>spring-releases</id>
-			<name>Spring Snapshots</name>
-			<url>https://repo.spring.io/libs-release</url>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
-		</repository>
-		<repository>
-			<id>spring-milestones</id>
-			<name>Spring Milestones</name>
-			<url>https://repo.spring.io/libs-milestone</url>
-			<snapshots>
-				<enabled>false</enabled>
-			</snapshots>
 		</repository>
 	</repositories>
 
